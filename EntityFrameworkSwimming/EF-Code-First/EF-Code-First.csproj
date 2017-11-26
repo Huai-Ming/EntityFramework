@@ -53,12 +53,36 @@
     <Compile Include="Entity\SchoolContext.cs" />
     <Compile Include="Entity\Standard.cs" />
     <Compile Include="Entity\Student.cs" />
+    <Compile Include="Migrations\201711260154035_InitialCreate.cs" />
+    <Compile Include="Migrations\201711260154035_InitialCreate.Designer.cs">
+      <DependentUpon>201711260154035_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711260227540_InitialCreate1.cs" />
+    <Compile Include="Migrations\201711260227540_InitialCreate1.Designer.cs">
+      <DependentUpon>201711260227540_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711260230235_addAgeField.cs" />
+    <Compile Include="Migrations\201711260230235_addAgeField.Designer.cs">
+      <DependentUpon>201711260230235_addAgeField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711260154035_InitialCreate.resx">
+      <DependentUpon>201711260154035_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711260227540_InitialCreate1.resx">
+      <DependentUpon>201711260227540_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711260230235_addAgeField.resx">
+      <DependentUpon>201711260230235_addAgeField.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,7 +10,7 @@ namespace EF_Code_First.Entity
     public class SchoolContext : DbContext
     {
         public SchoolContext()
-            : base()
+            : base("name=DefaultConnection")
         {
 
         }
